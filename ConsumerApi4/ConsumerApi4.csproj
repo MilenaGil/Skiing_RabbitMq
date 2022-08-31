@@ -4,19 +4,10 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>0b7df9da-b5c3-44f9-9241-e6e62ae1e5e4</UserSecretsId>
+    <UserSecretsId>040c8b1b-be48-4b20-9c24-1ca433ab54f9</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
-	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-		<NoWarn>1701;1702;1591</NoWarn>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-		<NoWarn>1701;1702;1591</NoWarn>
-	</PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="11.0.1" />
@@ -31,9 +22,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
   </ItemGroup>
-
-	<ItemGroup>
-		<ProjectReference Include="..\Messaging.Common\Messaging.Common.csproj" />
-	</ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\Messaging.Common\Messaging.Common.csproj" />
+  </ItemGroup>
 
 </Project>

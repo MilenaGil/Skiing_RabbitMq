@@ -19,13 +19,20 @@ services:
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
       ME_CONFIG_MONGODB_URL: mongodb://root:example@mongo:27017/
 
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: 'rabbitmq'
+    ports:
+        - 5672:5672
+        - 15672:15672
+
   publisher:
     image: ${DOCKER_REGISTRY-}publisher
     build:
       context: .
       dockerfile: Publisher/Dockerfile
     ports:
-      - 8083:80
+      - 8082:80
     depends_on:
       - "rabbitmq"
 
@@ -35,13 +42,38 @@ services:
       context: .
       dockerfile: ConsumerApi1/Dockerfile
     ports:
+      - 8083:80
+    depends_on:
+      - "publisher"
+
+  consumerapi2:
+    image: ${DOCKER_REGISTRY-}consumerapi2
+    build:
+      context: .
+      dockerfile: ConsumerApi2/Dockerfile
+    ports:
       - 8084:80
     depends_on:
       - "publisher"
 
-  rabbitmq:
-    image: rabbitmq:3-management-alpine
-    container_name: 'rabbitmq'
+  consumerapi3:
+    image: ${DOCKER_REGISTRY-}consumerapi3
+    build:
+      context: .
+      dockerfile: ConsumerApi3/Dockerfile
     ports:
-        - 5672:5672
-        - 15672:15672
+      - 8085:80
+    depends_on:
+      - "publisher"
+
+
+  consumerapi4:
+    image: ${DOCKER_REGISTRY-}consumerapi4
+    build:
+      context: .
+      dockerfile: ConsumerApi4/Dockerfile
+    ports:
+      - 8086:80
+    depends_on:
+      - "publisher"
+

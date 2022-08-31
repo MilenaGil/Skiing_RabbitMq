@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Messaging.Common", "Messagi
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C93C727A-AB01-4D9C-B099-2E812A51BDC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerApi1", "ConsumerApi1\ConsumerApi1.csproj", "{A789329C-0563-457D-9B86-185A13E49F20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerApi1", "ConsumerApi1\ConsumerApi1.csproj", "{A789329C-0563-457D-9B86-185A13E49F20}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerApi2", "ConsumerApi2\ConsumerApi2.csproj", "{224D0790-3E20-4219-A354-B9608EE878C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerApi3", "ConsumerApi3\ConsumerApi3.csproj", "{A09DED2B-3812-4CC3-A787-3FDA9940549C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerApi4", "ConsumerApi4\ConsumerApi4.csproj", "{C9F9873A-922D-4FA4-9EFD-25BE1B3C1673}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{A789329C-0563-457D-9B86-185A13E49F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A789329C-0563-457D-9B86-185A13E49F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A789329C-0563-457D-9B86-185A13E49F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{224D0790-3E20-4219-A354-B9608EE878C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{224D0790-3E20-4219-A354-B9608EE878C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{224D0790-3E20-4219-A354-B9608EE878C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{224D0790-3E20-4219-A354-B9608EE878C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A09DED2B-3812-4CC3-A787-3FDA9940549C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A09DED2B-3812-4CC3-A787-3FDA9940549C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A09DED2B-3812-4CC3-A787-3FDA9940549C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A09DED2B-3812-4CC3-A787-3FDA9940549C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9F9873A-922D-4FA4-9EFD-25BE1B3C1673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F9873A-922D-4FA4-9EFD-25BE1B3C1673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9F9873A-922D-4FA4-9EFD-25BE1B3C1673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9F9873A-922D-4FA4-9EFD-25BE1B3C1673}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
