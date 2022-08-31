@@ -4,11 +4,14 @@
 RabbitMQ ma ExchangeType ustawiony na fanout, co oznacza, że to co opublikuje za pomocą Publishera zostanie dostarczone do wszystkich Consumerów (których mam 4, ale mogłaby być ich inna liczba, a wiadomość dostaną wszystkie).
 
 Jest zrobiony też zapis do bazy mongoDB przez co możemy wyśledzić, że wiadomości zostały zapisane wszędzie te same.
+
 -------------------------------------------------------------------------------------------------------------------
+
 #ANG:
 RabbitMQ has ExchangeType as fanout, which means that everything what is publish with Publisher will be deliver to every Consumer (we have 4 consumers, but the number of them could be diffrent and the message still would be delivered to all of them).
 
 There is entry to the mongoDB database as well, beacause of which we can save the same message everwhere here.
+
 -------------------------------------------------------------------------------------------------------------------
 ![image](https://user-images.githubusercontent.com/72659265/187655250-e38bca1d-a137-42f9-8675-d67dd753024b.png)
 
